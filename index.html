@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Light and Sound Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <!-- import sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+     <!-- import google fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Creepster&family=Neonderthaw&display=swap" rel="stylesheet">
+    
+  </head>
+  <body >
+    <!-- this is the start of content -->
+    <h1>
+      Light and Sound Memory Game
+    </h1>
+    <p>
+      Repeat the pattern back to win the game!
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button class="hidden" id="stopBtn" onclick="stopGame()">Stop</button>
+    
+    <!-- Timer information area -->
+     <main  style="display:inline-block">
+        <h3 class="hidden" id="timerArea">
+          Time remaining: <button class="time" id="time">0 seconds</button>
+        </h3>
+       </main>
+
+    <!-- Game button area -->
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+      <button id="button7" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone()"></button>
+      <button id="button8" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()"></button>
+    </div>
+    
+    
+    <!-- Audio Files inclusion -->
+    <audio id="clocktick">
+      <source src="https://cdn.glitch.global/c75755ef-9e04-4d98-bce5-829d609a3bb7/timer.mp3?v=1650555475818" type="audio/mpeg">
+    </audio>
+    <audio id="buzz">
+      <source src="https://cdn.glitch.global/c75755ef-9e04-4d98-bce5-829d609a3bb7/buzz.wav?v=1650562923655" type="audio/ogg">
+    </audio>
+    <audio id="gameover">
+      <source src="https://cdn.glitch.global/c75755ef-9e04-4d98-bce5-829d609a3bb7/gameover.wav?v=1650562525189" type="audio/ogg">
+    </audio>
+    <audio id="gamewin">
+      <source src="https://cdn.glitch.global/c75755ef-9e04-4d98-bce5-829d609a3bb7/gamewin.wav?v=1650562528450" type="audio/ogg">
+    </audio>
+    <audio id="wrong">
+      <source src="https://cdn.glitch.global/c75755ef-9e04-4d98-bce5-829d609a3bb7/wrong.wav?v=1650642841733" type="audio/ogg">
+    </audio>
+
+  
+  </body>
+</html>
