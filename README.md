@@ -6,7 +6,8 @@ Submitted by: Tahmid Ahmed
 
 Time spent: ~10 hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: https://glitch.com/edit/#!/thin-twisty-fisherman
+
 
 ## Required Functionality
 
@@ -95,7 +96,7 @@ As for refactoring functions, the code isn’t the cleanest. There are multiple 
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](<[your-link-here](https://www.loom.com/share/4e9d98d0b41d44c2a3c25359367ab0d3)>)
+[My 5-minute Interview Recording](https://www.loom.com/share/4e9d98d0b41d44c2a3c25359367ab0d3)
 
 link just in case: https://www.loom.com/share/4e9d98d0b41d44c2a3c25359367ab0d3
 
